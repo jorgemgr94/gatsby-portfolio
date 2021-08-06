@@ -2,13 +2,24 @@ import React from "react";
 
 const aptitude = (
 	<>
-		With +7 years of experiencie I've worked with startups, as well as small,
-		mid and large companies, facing several scopes and challenges in Products
-		like: Multi-zone, Multi-language, Scalability, Multi-Tenancy,
-		Configurability, Availability, Extendability, Security and Fast learning.
-		<br />
-		<br />I love and believe in teamwork, smart work, best practices,
-		collaboration, home office, leadership, priority, order, people first,
+		<p>
+			I have +7 years of experience where I've worked with startups, as well as
+			small, mid and large companies.
+		</p>
+		<p>
+			I started working as a full stack developer for 4 years, then the next 2
+			years I focused on backend development with JavaScript. Nowadays I'm
+			learning about cloud development working with serverless apps, kubernetes,
+			containerization, CI/CD, multi-region, auto-scaling, etc.
+		</p>
+		{/* <p>
+			Besides my code skills, another differentiator are my soft skills; when I
+			was 22 years old, I was taking meets with C-Level Executives of a regional
+			healthcare company, leading the design and development of new business
+			units of their proprietary software.
+		</p> */}
+		I love and believe in teamwork, smart work, best practices, collaboration,
+		continuous learning, home office, leadership, priority, order, people first,
 		quickly adapt to change, new tech's.
 	</>
 );
