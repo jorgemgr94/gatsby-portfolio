@@ -1,16 +1,18 @@
 import React from "react";
 
-const aptitude = (
+const yearsOfExperience = new Date().getFullYear() - 2014;
+
+const about = (
 	<>
 		<p>
-			I have +7 years of experience where I've worked with startups, as well as
-			small, mid and large companies.
+			With +{yearsOfExperience} years of experience, I've worked with startups,
+			as well as small, mid, and large companies.
 		</p>
 		<p>
-			I started working as a full stack developer for 4 years, then the next 2
+			I started working as a full-stack developer for 4 years, then the next 2
 			years I focused on backend development with JavaScript. Nowadays I'm
 			learning about cloud development working with serverless apps, kubernetes,
-			containerization, CI/CD, multi-region, auto-scaling, etc.
+			containerization, CI/CD, multi-region, auto-scaling.
 		</p>
 		{/* <p>
 			Besides my code skills, another differentiator are my soft skills; when I
@@ -24,4 +26,4 @@ const aptitude = (
 	</>
 );
 
-export default aptitude;
+export default about;

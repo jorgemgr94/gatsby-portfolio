@@ -13,7 +13,7 @@ function Position(props) {
 	} = props.data;
 
 	return (
-		<section style={{ marginLeft: "1em" }}>
+		<section className="position">
 			<img
 				alt="x8"
 				src={companyImg}
@@ -22,7 +22,7 @@ function Position(props) {
 			<div style={{ display: "inline-block", verticalAlign: "middle" }}>
 				<span className="primary-text">{company}</span>
 				<br />
-				<span className="primary-text">{name}</span>
+				<span className="secondary-text">{name}</span>
 			</div>
 			<div
 				style={{
@@ -37,12 +37,21 @@ function Position(props) {
 						? `${monthsNames[endAt.getMonth()]} ${endAt.getFullYear()}`
 						: "Current"}
 				</div>
-				<div className="primary-text" style={{ textAlign: "right" }}>
+				<div className="secondary-text" style={{ textAlign: "right" }}>
 					{formatExperience(startAt, endAt)}
 				</div>
 			</div>
-			<p style={{ whiteSpace: "pre-wrap" }}>{description}</p>
-			<p>{technicalEnv}</p>
+			<div className="secondary-text">
+				<p style={{ whiteSpace: "pre-wrap" }}>{description}</p>
+				<p>
+					<small>
+						<span role="img" aria-label="">
+							💻 Technologies:
+						</span>{" "}
+						{technicalEnv}
+					</small>
+				</p>
+			</div>
 		</section>
 	);
 }

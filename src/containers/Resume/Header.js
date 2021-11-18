@@ -1,5 +1,5 @@
 import React from "react";
-import { socialNetworks, aptitude } from "../../database";
+import { socialNetworks, about } from "../../database";
 
 function Header() {
 	return (
@@ -38,8 +38,8 @@ function Header() {
 				</section>
 				<section id="rightSection">
 					<div className="container-fluid">
-						<span className="bold">APTITUDE</span>
-						<p>{aptitude}</p>
+						<span className="bold">About Me</span>
+						<p>{about}</p>
 						<div style={{ display: "flex", justifyContent: "flex-start" }}>
 							{socialNetworks.map((social) => {
 								return (

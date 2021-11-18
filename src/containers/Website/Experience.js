@@ -27,7 +27,12 @@ function Experience() {
 						<div className="mb-4">
 							<div className="card card-body bg-dark">
 								{position.description}
-								<div>{position.technicalEnv}</div>
+								<small>
+									<span role="img" aria-label="">
+										💻 Technologies:
+									</span>{" "}
+									{position.technicalEnv}
+								</small>
 							</div>
 						</div>
 					</>

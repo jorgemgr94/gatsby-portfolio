@@ -2,21 +2,23 @@ import React from "react";
 
 const positions = [
 	{
+		name: "Software Engineer",
+		companyImg: require("../assets/img/works/intersog.png"),
+		company: "Intersog",
+		startAt: new Date("06/09/2021"),
+		endAt: null,
+		description: <></>,
+		technicalEnv: "Typescript, React, RxJS, NodeJs, Firebase, GCP."
+	},
+	{
 		name: "Tech Lead / Digital Solutions Manager",
 		companyImg: require("../assets/img/works/sintec.png"),
 		company: "SINTEC",
 		startAt: new Date("01/02/2020"),
-		endAt: null,
+		startAt: new Date("03/09/2021"),
 		description: <></>,
-		technicalEnv: (
-			<>
-				<span role="img" aria-label="">
-					💻
-				</span>{" "}
-				React, Typescript, MongoDB, Node Js, Python, PostgreSQL, Git, SCRUM,
-				Google Cloud, AWS, Docker.
-			</>
-		)
+		technicalEnv:
+			"React, Typescript, MongoDB, NodeJs, Python, PostgreSQL, Git, SCRUM, GCP, AWS, Docker."
 	},
 	{
 		name: "Software Engineer, Consultant",
@@ -82,15 +84,8 @@ const positions = [
 				</ul>
 			</>
 		),
-		technicalEnv: (
-			<>
-				<span role="img" aria-label="">
-					💻
-				</span>{" "}
-				React, React Native, Typescript, MongoDB, Node Js, Python, Php, MySQL,
-				PostgreSQL, Git, SCRUM, Google Cloud, AWS, Docker.
-			</>
-		)
+		technicalEnv:
+			"React, React Native, Typescript, MongoDB, NodeJs, Python, Php, MySQL, PostgreSQL, Git, SCRUM, GCP, AWS, Docker."
 	},
 	{
 		name: "Software Engineer (Remote, Part time)",
@@ -140,15 +135,8 @@ const positions = [
 				</ul>
 			</>
 		),
-		technicalEnv: (
-			<>
-				<span role="img" aria-label="">
-					💻
-				</span>{" "}
-				Ruby on Rails, React, Jest, Mobx, Typescript, PostgreSQL, Heroku, Git,
-				SCRUM, Docker, Gitlab.
-			</>
-		)
+		technicalEnv:
+			"Ruby on Rails, React, Jest, Mobx, Typescript, PostgreSQL, Heroku, Git, SCRUM, Docker, Gitlab."
 	},
 	{
 		name: "Software Engineer",
@@ -207,15 +195,8 @@ const positions = [
 				</ul>
 			</>
 		),
-		technicalEnv: (
-			<>
-				<span role="img" aria-label="">
-					💻
-				</span>{" "}
-				React, React Native, Node Js, Ruby on Rails, MySQL, SQL Server, AWS,
-				Git, SCRUM, Jira, MQTT.
-			</>
-		)
+		technicalEnv:
+			"React, React Native, NodeJs, Ruby on Rails, MySQL, SQL Server, AWS, Git, SCRUM, Jira, MQTT."
 	},
 	{
 		name: "Tech Lead",
@@ -296,15 +277,8 @@ const positions = [
 				</ul>
 			</>
 		),
-		technicalEnv: (
-			<>
-				<span role="img" aria-label="">
-					💻
-				</span>{" "}
-				Php, Html, CSS, Javascript, MySQL, Bash, AWS, React, Android w/ Kotlin,
-				IOS w/ Swift, Git.
-			</>
-		)
+		technicalEnv:
+			"Php, Html, CSS, Javascript, MySQL, Bash, AWS, React, Android w/ Kotlin, IOS w/ Swift, Git."
 	},
 	{
 		name: "Software Engineer",
@@ -379,14 +353,7 @@ const positions = [
 				</ul>
 			</>
 		),
-		technicalEnv: (
-			<>
-				<span role="img" aria-label="">
-					💻
-				</span>{" "}
-				Php, Html, CSS, Javascript, MySQL, Bash, AWS.
-			</>
-		)
+		technicalEnv: "Php, Html, CSS, Javascript, MySQL, Bash, AWS."
 	},
 	{
 		name: "Software Engineer",
@@ -445,14 +412,8 @@ const positions = [
 				</ul>
 			</>
 		),
-		technicalEnv: (
-			<>
-				<span role="img" aria-label="">
-					💻
-				</span>{" "}
-				Php, Html, CSS, Javascript, Android w/ Java, MySQL, Bash, AWS.
-			</>
-		)
+		technicalEnv:
+			"Php, Html, CSS, Javascript, Android w/ Java, MySQL, Bash, AWS."
 	}
 ];
 

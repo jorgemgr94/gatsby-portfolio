@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { socialNetworks, aptitude, technologies } from "../../database";
+import { socialNetworks, about, technologies } from "../../database";
+import { arrayToSeparatedString } from "../../util/format";
 
 function About() {
 	return (
@@ -16,7 +17,7 @@ function About() {
 							👨‍💻
 						</span>
 					</h2>
-					<p className="mb-4">{aptitude}</p>
+					<p className="mb-4">{about}</p>
 					<div className="social-icons mb-4">
 						{socialNetworks.map((social) => (
 							<a
@@ -34,24 +35,14 @@ function About() {
 					</div>
 				</div>
 				<div className="">
-					<h3 className="mb-2">Current dev stack</h3>
+					<h3 className="mb-2">Current Tech Stack</h3>
+					<p className="mb-4">{arrayToSeparatedString(technologies.current)}</p>
+					<h3 className="mb-2">Learning</h3>
 					<p className="mb-4">
-						{technologies
-							.filter((t) => t.status === 0)
-							.map((t) => `${t.name}, `)}
+						{arrayToSeparatedString(technologies.learning)}
 					</p>
-					<h3 className="mb-2">I'm learning</h3>
-					<p className="mb-4">
-						{technologies
-							.filter((t) => t.status === 1)
-							.map((t) => `${t.name}, `)}
-					</p>
-					<h3 className="mb-2">I have used</h3>
-					<p className="mb-4">
-						{technologies
-							.filter((t) => t.status === 2)
-							.map((t) => `${t.name}, `)}
-					</p>
+					<h3 className="mb-2">I've used</h3>
+					<p className="mb-4">{arrayToSeparatedString(technologies.used)}</p>
 				</div>
 			</div>
 			<div class="container-fluid">

@@ -6,7 +6,7 @@ function ProfessionalExperience() {
 	return (
 		<>
 			<br />
-			<span className="bold">PROFESSIONAL EXPERIENCE</span>
+			<span className="bold">Professional Experience</span>
 			<br />
 			<br />
 			{positions.map((position, key) => {

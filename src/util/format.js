@@ -31,3 +31,7 @@ export function formatDate(date) {
 	if (!date) return "Current";
 	return `${monthsNames[date.getMonth()]} ${date.getFullYear()}`;
 }
+
+export function arrayToSeparatedString(array) {
+	return array.join(", ") + ".";
+}
