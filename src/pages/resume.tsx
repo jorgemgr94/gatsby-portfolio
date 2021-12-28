@@ -223,7 +223,6 @@ export default function ResumePage() {
 					</div>
 				</div>
 			</div>
-
 			<nav className="sticky top-0 h-20 bg-gray-800 p-5 sm:px-24 xl:px-64">
 				<div className="mx-auto flex justify-between items-center">
 					<a
