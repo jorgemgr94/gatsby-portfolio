@@ -1,7 +1,7 @@
 # how to run:
 
 
-```shell
+```bash
 # install dependencies
 npm i --legacy-peer-deps
 
