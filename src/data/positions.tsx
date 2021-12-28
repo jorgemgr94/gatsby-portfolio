@@ -364,9 +364,9 @@ const positions = [
 						<span role="img" aria-label="">
 							🏆
 						</span>
-						{` `}I achieved the implementation of a metric called "continuous
+						{` I achieved the implementation of a metric called "continuous
 						improvement" which consists of implementing an innovative feature
-						every quarter to the project.
+						every quarter to the project.`}
 					</li>
 				</ul>
 			</>
@@ -427,9 +427,9 @@ const positions = [
 						<span role="img" aria-label="">
 							🏆
 						</span>
-						{` `}I lost the fear of learning programming languages that I didn't
+						{` I lost the fear of learning programming languages that I didn't
 						know, increased my learning curve allowing me to take part in the
-						research and development of new technologies.
+						research and development of new technologies.`}
 					</li>
 				</ul>
 			</>

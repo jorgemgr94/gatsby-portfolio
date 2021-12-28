@@ -1,12 +1,9 @@
 {
-  "name": "my-gatsby-site",
+  "name": "jorgemgr.com",
   "version": "1.0.0",
   "private": true,
-  "description": "My Gatsby Site",
+  "description": "My Personal Website",
   "author": "Jorge García",
-  "keywords": [
-    "gatsby"
-  ],
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
