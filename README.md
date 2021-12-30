@@ -1,4 +1,4 @@
-# Run development with Docker:
+# Run project with Docker:
 
 
 ```bash
