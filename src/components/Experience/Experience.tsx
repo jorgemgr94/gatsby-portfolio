@@ -8,7 +8,7 @@ import { PositionsData } from "../../data";
 function Experience() {
 	return (
 		<SectionTemplate id="experience" flexDirection="flex-col">
-			<div className="text-yellow-500 text-4xl uppercase font-bold mb-4 w-full">
+			<div className="text-4xl uppercase font-bold mb-4 w-full dark:text-yellow-500">
 				Professional Exp.
 			</div>
 			{PositionsData.map((position, key) => (

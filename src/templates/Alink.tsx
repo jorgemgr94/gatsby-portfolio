@@ -11,7 +11,7 @@ function ALink({ children, url }: IAlinkProps) {
 			href={url}
 			target="_blank"
 			rel="noopener noreferrer"
-			className="underline cursor-pointer hover:text-blue-400"
+			className="text-blue-400 underline cursor-pointer hover:text-blue-300 dark:text-white dark:hover:text-blue-400"
 		>
 			{children}
 		</a>

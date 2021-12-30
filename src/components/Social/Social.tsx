@@ -18,51 +18,62 @@ interface ISocialNetworkLinkProps {
 
 function SocialNetworkLink({ icon, url, name }: ISocialNetworkLinkProps) {
 	return (
-		<span className="m-2">
-			{icon}
-			{` `}
-			<Alink url={url}>{name}</Alink>
+		<span className="m-2 text-blue-400 hover:text-blue-300 dark:text-white dark:hover:text-blue-400">
+			<Alink url={url}>
+				{icon} {name}
+			</Alink>
 		</span>
 	);
 }
 
+const socialNetworks = [
+	{
+		icon: FaTwitter,
+		url: `https://twitter.com/jorgemgr94`,
+		name: `Twitter`
+	},
+	{
+		icon: FaInstagram,
+		url: `https://www.instagram.com/jorgemgr94/`,
+		name: `Instagram`
+	},
+	{
+		icon: FaStackOverflow,
+		url: `https://stackoverflow.com/users/5377188/jorge-garcia`,
+		name: `Stack Overflow`
+	},
+	{
+		icon: FaMediumM,
+		url: `https://medium.com/@jorgemgr94`,
+		name: `Medium`
+	},
+	{
+		icon: FaCode,
+		url: `https://dev.to/jorgemgr94`,
+		name: `Dev.to`
+	},
+	{
+		icon: FaCode,
+		url: `https://app.codesignal.com/profile/jorgemgr94`,
+		name: `Codesignal`
+	}
+];
+
 function Social() {
 	return (
 		<SectionTemplate id="social" flexDirection="flex-col">
-			<div className="text-yellow-500 text-4xl uppercase font-bold mb-4 w-full">
+			<div className="text-4xl uppercase font-bold mb-4 w-full dark:text-yellow-500">
 				Social Media
 			</div>
 			<section className="flex w-full justify-evenly flex-wrap">
-				<SocialNetworkLink
-					icon={<FaTwitter className="inline-block" />}
-					url="https://twitter.com/jorgemgr94"
-					name="Twitter"
-				/>
-				<SocialNetworkLink
-					icon={<FaInstagram className="inline-block" />}
-					url="https://www.instagram.com/jorgemgr94/"
-					name="Instagram"
-				/>
-				<SocialNetworkLink
-					icon={<FaStackOverflow className="inline-block" />}
-					url="https://stackoverflow.com/users/5377188/jorge-garcia"
-					name="Stack Overflow"
-				/>
-				<SocialNetworkLink
-					icon={<FaMediumM className="inline-block" />}
-					url="https://medium.com/@jorgemgr94"
-					name="Medium"
-				/>
-				<SocialNetworkLink
-					icon={<FaCode className="inline-block" />}
-					url="https://dev.to/jorgemgr94"
-					name="Dev.to"
-				/>
-				<SocialNetworkLink
-					icon={<FaCode className="inline-block" />}
-					url="https://app.codesignal.com/profile/jorgemgr94"
-					name="Codesignal"
-				/>
+				{socialNetworks.map((socialNetwork, key) => (
+					<SocialNetworkLink
+						key={key}
+						icon={<socialNetwork.icon className="inline-block" />}
+						url={socialNetwork.url}
+						name={socialNetwork.name}
+					/>
+				))}
 			</section>
 		</SectionTemplate>
 	);

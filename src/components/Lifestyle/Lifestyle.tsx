@@ -26,7 +26,7 @@ const lifestyles = [
 function Lifestyle() {
 	return (
 		<SectionTemplate id="lifestyle" flexDirection="flex-col">
-			<div className="text-yellow-500 text-4xl uppercase font-bold mb-4 w-full">
+			<div className="text-4xl uppercase font-bold mb-4 w-full dark:text-yellow-500">
 				Lifestyle
 			</div>
 			<p className="w-full mb-4">

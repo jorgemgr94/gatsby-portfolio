@@ -1,0 +1,13 @@
+FROM node:16.13.1
+EXPOSE 8000
+
+WORKDIR /app
+
+# copy the package.json file, update any deps and install them
+COPY package.json .
+RUN npm install --legacy-peer-deps
+
+# copy the whole source folder(the dir is relative to the Dockerfile
+COPY . .
+
+CMD [ "npm", "run", "develop" ]

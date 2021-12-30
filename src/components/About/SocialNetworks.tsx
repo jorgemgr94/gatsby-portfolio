@@ -1,3 +1,4 @@
+import { FaRegFilePdf } from "react-icons/fa";
 import React from "react";
 
 import IconRounded from "../../templates/IconRounded";
@@ -19,6 +20,14 @@ function SocialNetworks() {
 						<IconRounded icon={<socialNetwork.icon />} />
 					</a>
 				))}
+				<a
+					href={`/resume`}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="cursor-pointer"
+				>
+					<IconRounded icon={<FaRegFilePdf />} />
+				</a>
 			</section>
 		</>
 	);
