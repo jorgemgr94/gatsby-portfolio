@@ -3,10 +3,10 @@ import { BsFillStopFill } from "react-icons/bs";
 import React from "react";
 
 import { formatDate, formatExperience } from "../../util/format";
-import { Position } from "../../data";
+import { IPosition } from "../../data";
 
 interface IPositionCardProps {
-	position: Position;
+	position: IPosition;
 }
 
 function PositionCard({ position }: IPositionCardProps) {

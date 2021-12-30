@@ -3,7 +3,7 @@ import IntersogPhoto from "../images/companies/intersog.png";
 // import GaragePhoto from "../images/companies/garage.png";
 // import ProfilePhoto from "../images/companies/intersog.png";
 
-export type Position = Readonly<{
+export interface IPosition {
 	name: string;
 	startAt: Date;
 	endAt?: Date;
@@ -15,9 +15,9 @@ export type Position = Readonly<{
 	responsibilities: string[];
 	achievements: string[];
 	technicalEnv: string;
-}>;
+}
 
-export const PositionsData: Position[] = [
+export const PositionsData: IPosition[] = [
 	{
 		name: `Software Engineer`,
 		startAt: new Date(`09/06/2021`),
