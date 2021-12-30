@@ -1,10 +1,7 @@
-# how to run:
+# Run development with Docker:
 
 
 ```bash
-# install dependencies
-npm i --legacy-peer-deps
-
-# start project
-npm start
+docker compose build
+docker compose up
 ```
