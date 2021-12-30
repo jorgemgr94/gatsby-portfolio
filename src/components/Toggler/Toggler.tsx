@@ -1,6 +1,6 @@
+import "./styles.css";
 import React from "react";
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
-import "./styles.css";
 
 interface IThemeToggleProps {
 	theme: string;

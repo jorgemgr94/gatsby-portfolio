@@ -1,6 +1,7 @@
-import React from "react";
-import { Disclosure } from "@headlessui/react";
 import { BiMenu, BiX } from "react-icons/bi";
+import { Disclosure } from "@headlessui/react";
+import React from "react";
+
 import { INavigationItem } from "./type";
 
 import ProfilePhoto from "../../images/me.jpg";
@@ -19,7 +20,7 @@ function MobileNavbar({
 	setCurrentItem
 }: IDesktopNavbarProps) {
 	return (
-		<Disclosure as="nav" className="basis-full flex-col md:hidden bg-gray-800">
+		<Disclosure as="nav" className="basis-full flex-col md:hidden bg-gray-700">
 			{({ open, close }) => (
 				<>
 					<div className="flex items-center justify-between p-4">
@@ -50,7 +51,7 @@ function MobileNavbar({
 									}}
 									className={classNames(
 										navigationItem.current
-											? `bg-gray-900 text-white`
+											? `bg-gray-800 text-white`
 											: `text-gray-300 hover:bg-gray-700 hover:text-white`,
 										`block px-3 py-2 rounded-md text-base font-medium`
 									)}

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import MobileNavbar from "./MobileNavbar";
-import DesktopNavbar from "./DesktopNavbar";
 import scrollTo from "gatsby-plugin-smoothscroll";
+
+import DesktopNavbar from "./DesktopNavbar";
+import MobileNavbar from "./MobileNavbar";
+
 import { INavigationItem } from "./type";
 
 const routes: INavigationItem[] = [

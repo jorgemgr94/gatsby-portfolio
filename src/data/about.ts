@@ -6,7 +6,7 @@ export enum AboutParagraph {
 	Third
 }
 
-export const About = {
+export const AboutData = {
 	[AboutParagraph.First]: `With +${yearsOfExperience} years of experience, I've worked with startups,
 	as well as small, mid, and large companies.`,
 

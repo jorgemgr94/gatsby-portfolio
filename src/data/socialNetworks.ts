@@ -1,25 +1,19 @@
-const socialNetworks = [
+import { FaGithub, FaGitlab, FaLinkedinIn } from "react-icons/fa";
+
+export const SocialNetworksData = [
 	{
-		id: 1,
 		name: `Github`,
-		icon: `fab fa-github`,
-		url: `https://github.com/jorgemgr94`,
-		img: require(`../assets/img/social/github.png`)
+		icon: FaGithub,
+		url: `https://github.com/jorgemgr94`
 	},
 	{
-		id: 2,
 		name: `Linkedin`,
-		icon: `fab fa-linkedin-in`,
-		url: `https://www.linkedin.com/in/jorgemgr94/`,
-		img: require(`../assets/img/social/linkedin.png`)
+		icon: FaLinkedinIn,
+		url: `https://www.linkedin.com/in/jorgemgr94/`
 	},
 	{
-		id: 3,
 		name: `Gitlab`,
-		icon: `fab fa-gitlab`,
-		url: `https://gitlab.com/jorgemgr94`,
-		img: require(`../assets/img/social/gitlab.png`)
+		icon: FaGitlab,
+		url: `https://gitlab.com/jorgemgr94`
 	}
 ];
-
-export default socialNetworks;

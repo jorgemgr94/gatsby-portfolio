@@ -1,9 +1,11 @@
-const listOfTechnologies = [
-	/*
-    status = 0 -> Current Tech Stack
-    status = 1 -> Learning
-    status = 2 -> I've used
-  */
+import { arrayToSeparatedString } from "../util/format";
+
+/*
+	status = 0 -> Current Tech Stack
+	status = 1 -> Learning
+	status = 2 -> I've used
+*/
+const technologies = [
 	{ name: `Typescript`, status: 0 },
 	{ name: `React`, status: 0 },
 	{ name: `RxJS`, status: 0 },
@@ -43,21 +45,18 @@ const listOfTechnologies = [
 	{ name: `Redis`, status: 2 },
 	{ name: `Ruby on Rails`, status: 2 }
 ];
+const current = technologies.filter((t) => t.status === 0).map((t) => t.name);
+const learning = technologies.filter((t) => t.status === 1).map((t) => t.name);
+const used = technologies.filter((t) => t.status === 2).map((t) => t.name);
 
-const current = listOfTechnologies
-	.filter((t) => t.status === 0)
-	.map((t) => t.name);
-const learning = listOfTechnologies
-	.filter((t) => t.status === 1)
-	.map((t) => t.name);
-const used = listOfTechnologies
-	.filter((t) => t.status === 2)
-	.map((t) => t.name);
+export enum TechnologiesEnum {
+	Current,
+	Learning,
+	Used
+}
 
-const technologies = {
-	current,
-	learning,
-	used
+export const TechnologiesData = {
+	[TechnologiesEnum.Current]: arrayToSeparatedString(current),
+	[TechnologiesEnum.Learning]: arrayToSeparatedString(learning),
+	[TechnologiesEnum.Used]: arrayToSeparatedString(used)
 };
-
-export default technologies;
