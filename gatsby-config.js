@@ -1,7 +1,9 @@
 module.exports = {
 	siteMetadata: {
 		exampleUrl: `https://jorgemgr.com`,
-		title: `My Personal Site`
+		title: `My Personal Site`,
+		author: `Jorge García`,
+		description: `A personal site for Jorge García.`
 	},
 	plugins: [
 		`gatsby-plugin-postcss`,
