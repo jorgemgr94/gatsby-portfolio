@@ -30,9 +30,9 @@ export default function MobileNavbar({
 						<a
 							// className="font-extrabold	tracking-wider uppercase text-gray-400"
 							className={classNames(
-								`block px-3 py-2 rounded-md text-base font-medium cursor-pointer text-gray-900`, // base
+								`block px-3 py-2 rounded-md text-base font-medium cursor-pointer text-gray-500`, // base
 								navigationItem.current
-									? `bg-white dark:bg-gray-800 dark:text-white` // selected
+									? `bg-white text-gray-800 dark:bg-gray-800 dark:text-white` // selected
 									: `text-gray-700 dark:text-gray-300 dark:hover:text-white`
 							)}
 							onClick={() => {

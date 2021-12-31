@@ -20,14 +20,17 @@ function MobileNavbar({
 	setCurrentItem
 }: IDesktopNavbarProps) {
 	return (
-		<Disclosure as="nav" className="basis-full flex-col md:hidden bg-gray-700">
+		<Disclosure
+			as="nav"
+			className="bg-gray-100 basis-full flex-col md:hidden dark:bg-gray-700"
+		>
 			{({ open, close }) => (
 				<>
 					<div className="flex items-center justify-between p-4">
 						<div className="flex items-center justify-between">
 							<div className="flex items-center">
 								{/* Mobile menu button*/}
-								<Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+								<Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-white">
 									<span className="sr-only">Open main menu</span>
 									{open ? <BiX /> : <BiMenu />}
 								</Disclosure.Button>
@@ -50,10 +53,10 @@ function MobileNavbar({
 										setCurrentItem(navigationItem);
 									}}
 									className={classNames(
+										`block px-3 py-2 rounded-md text-base font-medium text-gray-500`,
 										navigationItem.current
-											? `bg-gray-800 text-white`
-											: `text-gray-300 hover:bg-gray-700 hover:text-white`,
-										`block px-3 py-2 rounded-md text-base font-medium`
+											? `bg-white text-gray-800 dark:bg-gray-800 dark:text-white`
+											: `dark:text-gray-300 dark:hover:text-white`
 									)}
 									aria-current={navigationItem.current ? `page` : undefined}
 								>
