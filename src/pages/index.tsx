@@ -12,16 +12,16 @@ export default function IndexPage() {
 	return (
 		<>
 			<Seo title="Home" />
-			<div className="flex flex-col md:flex-row">
+			<section className="flex flex-col md:flex-row">
 				<Toggle />
 				<Navbar />
-				<div className="basis-full max-h-screen overflow-y-scroll dark:bg-gray-800 dark:text-white md:basis-9/12 xl:basis-10/12">
+				<section className="basis-full max-h-screen overflow-y-scroll dark:bg-gray-800 dark:text-white md:basis-9/12 xl:basis-10/12">
 					<About />
 					<Experience />
 					<Social />
 					<Lifestyle />
-				</div>
-			</div>
+				</section>
+			</section>
 		</>
 	);
 }

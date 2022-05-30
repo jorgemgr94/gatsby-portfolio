@@ -7,8 +7,8 @@ export enum AboutParagraph {
 }
 
 export const AboutData = {
-	[AboutParagraph.First]: `With +${yearsOfExperience} years of experience, I've worked with startups,
-	as well as small, mid, and large companies.`,
+	[AboutParagraph.First]: `+${yearsOfExperience} years of experience working with small, mid, large companies
+	as well as 3 startups (2 seeds, 1 series A).`,
 
 	[AboutParagraph.Second]: `I started working as a full-stack developer for 4 years, then the next 2
 	years I focused on backend development with JavaScript. Nowadays I'm
