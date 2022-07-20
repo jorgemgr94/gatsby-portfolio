@@ -7,6 +7,6 @@ RUN npm install --legacy-peer-deps
 COPY . .
 RUN npm run build
 
-FROM nginx:1.21.5
+FROM nginx:mainline
 EXPOSE 80
 COPY --from=build /app/public /usr/share/nginx/html
