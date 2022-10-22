@@ -15,7 +15,7 @@
     "build:tailwind": "tailwind build -i src/styles/index.css -o src/styles/tailwind.css"
   },
   "dependencies": {
-    "@headlessui/react": "^1.4.2",
+    "@headlessui/react": "^1.7.3",
     "gatsby": "^4.4.0",
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-manifest": "^4.4.0",
