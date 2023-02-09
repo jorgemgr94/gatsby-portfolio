@@ -20,5 +20,7 @@ steps:
         "managed",
         "--port",
         "80",
+        "--max-instances",
+        "30",
         "--allow-unauthenticated"
       ]
